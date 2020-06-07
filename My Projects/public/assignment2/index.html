@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <body>
+
+        <div align="center">
+        
+            <img src="saylani-logo.png">
+        
+            <h1><u>STUDENT REGISTRATION FORM</u></h1>	
+                        
+            <form action="final.html" method="post">
+                
+                <table border="0" cellspacing="6">
+                    
+                    <tbody><tr>
+                        <td><label for="f_name">FIRST NAME</label></td>
+                        <td>
+                            <input type="text" name="first_name" placeholder="Enter First Name" id="f_name" maxlength="30" required=""><span>(max 30 characters a-z and A-Z)</span>
+                        </td>
+                    </tr>	
+        
+                    <tr>
+                        <td><label for="l_name">LAST NAME</label></td>
+                        <td><input type="text" name="last_name" placeholder="Enter Last Name" id="l_name" maxlength="30" required=""><span>(max 30 characters a-z and A-Z)</span>
+                        </td>
+                    </tr>	
+        
+        
+        
+                    <tr>
+                        <td><label for="d_o_b">DATE OF BIRTH</label></td>
+                        <td>
+                        
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Enter your Date of birth" required="">
+                        </td>
+        
+                    </tr>	
+        
+                    <tr>
+                        <td><label for="email_id">EMAIL ID</label></td>
+                        <td><input type="email" name="email" placeholder="Enter email address" id="email_id" required=""></td>
+                    </tr>	
+        
+                    <tr>
+                        <td><label for="num">MOBILE NUMBER</label></td>
+                        <td><input type="number" name="number" placeholder="Enter mobile number" id="num" max="10" required="">
+                        <span>(10 digit number)</span>	
+                        </td>
+                    </tr>	
+        
+        
+                    <tr>
+                        <td><label for="gend">GENDER</label></td>
+                        <td>
+                            <span>Male</span><input type="radio" name="gender" value="male" id="gend" required="">
+                            <span>Female</span><input type="radio" name="gender" value="female" id="gend" required="">
+                        </td>
+                    </tr>	
+        
+        
+        
+                    <tr>
+                        <td><label for="add">ADDRESS</label></td>
+                        <td><textarea name="address" id="add" rows="6" cols="40" required=""></textarea></td>
+                    </tr>	
+        
+        
+                    <tr>
+                        <td><label for="city">CITY</label></td>
+                        <td><input type="text" name="city" placeholder="Enter city name" id="city" maxlength="30" required="">
+                            <span>(max 30 characters a-z and A-Z)</span>
+                        </td>
+                    </tr>	
+        
+                    <tr>
+                        <td> <label for="pinCode">PIN Code:</label>
+                           <td> <input type="tel" name="pinCode" id="pinCode" pattern="[0-9]{6}" placeholder="Enter PIN code" required=""> 
+                            <span>(6 digital number)</span>
+                        </td>
+                        
+                        </td>
+                    </tr>	
+        
+        
+                    <tr>
+                        <td><label for="enter_state">ENTER STATE</label></td>
+                        <td><input type="text" name="state" placeholder="Enter state" id="enter_state" maxlength="30" required="">
+                        <span>(max 30 characters a-z and A-Z)</span>	
+                        </td>
+                    </tr>	
+        
+                    <tr>
+                        <td><label for="country">COUNTRY</label></td>
+                        <td><input type="name" name="country" placeholder="Enter Country" id="country" required=""></td>
+                    </tr>	
+        
+        
+        
+        
+                    <tr>
+                        <td><label for="hobbies">HOBBIES</label></td>
+                        <td>
+                            <span>Drawing</span><input type="checkbox" name="hobbies" value="Drawing" id="hobbies">
+                            <span>Singing</span><input type="checkbox" name="hobbies" value="Singing" id="hobbies">
+                            <span>Dancing</span><input type="checkbox" name="hobbies" value="Dancing" id="hobbies">
+                            <span>Sketching</span><input type="checkbox" name="hobbies" value="Sketching" id="hobbies">
+                            <br>
+                            <span>Others</span><input type="checkbox" name="hobbies" value="Others" id="hobbies">
+                            <input type="text" name="hobbies" id="hobbies">
+                        </td>
+                    </tr>	
+        
+        
+                    <tr>
+                        <td><label for="quali">QUALIFICATION</label></td>
+                        <td>
+                            <table border="0">
+                                <tbody><tr>
+                                    <th>Sl.No.</th>
+                                    <th>Examination</th>
+                                    <th>Board</th>
+                                    <th>Percentage</th>
+                                    <th>Year of Passing</th>
+                                </tr>
+                                
+                                <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td><input type="text" id="quali" name="" maxlength="10"></td>	
+                                <td><input type="number" max="100" id="quali" name=""></td>	
+                                <td><input type="text" id="quali" name="">
+                                </td>	
+                                </tr>
+        
+                                <tr>
+                                <td>2</td>
+                                <td>Class XII</td>
+                                <td><input type="text" id="quali" name="" maxlength="10"></td>	
+                                <td><input type="number" max="100" id="quali" name=""></td>	
+                                <td><input type="text" id="quali" name=""></td>	
+                                </tr>
+        
+                                <tr>
+                                <td>3</td>
+                                <td>Graducation</td>
+                                <td><input type="text" id="quali" name="" maxlength="10"></td>	
+                                <td><input type="number" max="100" id="quali" name=""></td>	
+                                <td><input type="text" id="quali" name=""></td>	
+                                </tr>
+        
+                                <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td><input type="text" name="" maxlength="10"></td>	
+                                <td><input type="number" max="100" id="quali" name=""></td>	
+                                <td><input type="text" name=""></td>	
+                                </tr>
+        
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td align="center"><span>(10 char max)</span></td>
+                                    <td align="center"><span>(upto 2 decimal)</span></td>
+                                    <td></td>
+                                </tr>
+        
+                            </tbody></table>
+                        </td>
+                    </tr>	
+        
+        
+        
+                    <tr>
+                        <td><label for="cources">COURSES APPLIED FOR</label></td>
+                        <td>
+                            <span>BCA</span><input type="radio" name="cources" value="BCA" id="cources" required="">
+                            <span>B.com</span><input type="radio" name="cources" value="B.Com" id="cources" required="">
+                            <span>B.sc</span><input type="radio" name="cources" value="B.Sc" id="cources" required="">
+                            <span>B.A</span><input type="radio" name="cources" value="B.A" id="cources" required="">
+                        </td>
+                    </tr>	
+        
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit" name="submit">
+                            <input type="reset" value="Reset" name="reset">
+                        </td>
+        
+                    </tr>
+        
+                </tbody></table>
+            </form>
+        </div>
+        
+        
+        
+        
+        </body>
+</body>
+</html>

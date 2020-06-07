@@ -1,0 +1,553 @@
+
+/* CSS */  
+  
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: 'Merriweather';
+    src: url('Merriweather/Merriweather-Light.ttf');
+}
+@font-face{
+    font-family: 'Merriweather-bold';
+    src: url('Merriweather/Merriweather-Bold.ttf');
+}
+
+
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family:Merriweather;
+}
+a{  
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+} 
+h2{ text-align: center;}
+li{ list-style: none;}
+
+.main{
+    width: 1170px;
+    margin: 0px auto;
+}
+
+/* Common */
+
+.links , .introduction{
+    padding: 60px 15px ;
+}
+
+
+.header{
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;}
+.header div{  height: 100%;width: 100%;}
+.row-1{
+    background-color: rgb(49, 109, 195);}
+
+.s-icons , .buttons{
+    flex: 1;
+    padding: 10px 0px;}
+
+.buttons a{
+    border: 1px solid green;  
+}
+.buttons{ padding-left: 3px;}
+button{
+    padding: 6px 10px;
+    font-size: 11px ;
+    margin-right: 2px;
+    color: green;}
+
+.s-icons ul li{
+    display: inline-block;
+    padding: 0px 12px;}
+
+    .sec{
+        flex: 2;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        word-spacing: 1px;
+        padding-top:15px;
+        line-height: 25px;
+        font-weight: lighter;}
+
+
+/* Nav Bar */
+.row-2{
+    background-color: rgb(247, 248, 250);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    border-bottom: 1px solid black;
+}
+nav{
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;}
+  .logo img{
+    margin-right: 30px;
+  width: 192px;
+  height: 52px;
+  padding: 10px 0px 0px 0px;}
+ nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;}  
+  .nav-links li{
+    display: inline-block;
+    margin: 2px 0px;
+    padding: 23px 0px;
+    font-weight: lighter;
+    font-size: 13px;
+    font-family: Merriweather-bold, sans-serif;}
+  .nav-links li a{
+    color: #666666;
+    outline: 0;
+    padding: 10px 16px;
+    border-radius: 28px; }
+  .nav-links a.active,.nav-links a:hover{
+    background-color:royalblue;
+        color: white;
+        transition: 0.5s;}
+  .checkbtn,.checkbtn1{
+    font-size: 25px;
+    color: gray;
+    float: right;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;}
+  #check,#check1{
+    display: none;}
+  .nav-links li ul{
+    background:white;
+    position: absolute;
+    top: 66.5px;
+    margin-left:3px;
+    padding:0px;
+    display:none;
+    border: 1px solid black;
+    border-radius:0px 0px 12px 12px;}	
+.nav-links li:hover ul{
+    display:block;}	
+.nav-links li ul li{ 
+    display:block;
+    width: 200px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 13px;
+    outline: 0;
+    padding: 10px 8px 8px 10px;
+    margin:0px;
+    cursor: pointer;
+    line-height:normal;}   
+.nav-links li ul li:hover ul{ 
+    visibility: visible;
+    display:block;
+    background:white;
+    color: #4b4a4a;
+    position:absolute;
+    top:0px;
+    left: 219px;
+    margin-left:0px;
+    padding:0px;}
+.nav-links li ul li ul{
+    visibility: hidden;}
+.nav-links li ul li:hover{
+    background-color:royalblue;
+    color: white;}
+
+
+
+
+
+/* Silder */
+.row-3{
+    background-color: white;
+}
+.carousel-container{
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-slide{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+}
+.carousel-slide img{
+    width: 100%;
+}
+#prevb{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+#nextb{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.news{
+    background-color: rgb(49, 109, 195);
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding: 5px 0px;}
+
+/* Intro */
+.row-4{
+    background-color: rgb(247, 248, 250);
+}
+.intro {
+    padding: 0px 88px;
+    margin-top: 15px;
+    margin-bottom: 30px; }
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+.pic img{
+    position: relative;
+    top: 6px;
+    margin: 0px 15px;}   
+.intro p{
+    text-align: justify;
+    word-spacing: 1px;
+    font-size: 85%;
+    font-weight: 550;
+    line-height: 26px;
+    padding: 0px 15px;
+    color: gray;} 
+.separator {
+    width: 70px;
+    height: 3px;
+    background-color: green;
+    display: block;
+}
+
+
+/* figures */
+.row-5{
+    background-color: rgb(38, 85, 232);
+    background-size: cover;
+}
+.figures{
+    display: flex;
+    padding: 80px 15px;
+}
+.data{
+    width: 100%;
+    color: white;
+    text-align: center; 
+}
+.data #fig-id-1{
+margin: 0px 15px 0px 30px;
+}
+.data #fig-id-2{
+margin: 0px 30px 0px 15px;
+}
+.data img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* links */
+.row-6{
+    background-color: rgb(247, 248, 250);}
+
+    .boxes-1{
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+    .boxes-1 div{
+        height: 125px; 
+        width: 26.1%;
+        margin: 0px 0px 30px 0px;
+        background-color: white;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+    }
+.one#links-1 , .two#links-2{
+        margin: 0px 30px;
+    }
+
+
+
+.boxes-1 img , .boxes-2 img{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;}
+
+
+
+
+/* mission */
+.row-7{
+    background-color: white;
+}
+.mission-projects{
+    display: flex;
+    padding: 60px 15px 40px 15px;
+}
+
+.mission{
+    width: 67.9%;
+    margin-right: 15px;
+}
+.ue{
+    margin-left: 15px;
+    width: 32.1%;
+    padding-left: 2px ;
+    height: 100%;
+}
+.ue marquee{
+    width: 300px;
+    height: 200px;
+    padding: 0px 0px 0px 0px;
+    word-spacing: 1px;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: gray;
+
+}
+.r1,.r2{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+.three,.four{
+    display: flex;
+     width: 100%;
+     background-color: #f8f9fa;
+     border : 1px solid #eeeeee;
+    padding: 15px;
+    text-align: center;
+}
+.r1 img,.r2 img{
+    width: 32px;
+    height: 32px;
+    margin-right: 30px;
+}
+#hepa,#it{
+    margin: 0px 15px 0px 0px;
+}
+#house,#thar{
+margin: 0px 0px 0px 15px;
+}
+
+/* Gallery */
+.gh{
+    padding: 60px 15px 40px 15px;
+}
+.gallery{
+    display: flex;
+    margin-top: 30px;
+    height: 300px;
+    position: relative;
+    background: white;
+}
+.gallery .pg-1,.gallery .pg-2,.gallery .pg-3,.gallery .pg-4,.gallery .pg-5{
+position: absolute;top: 0;width: 19%;height: 50%;}
+.gallery .pg-1{left: 0px;}
+.gallery .pg-2{left: 20%;}
+.gallery .pg-3{left: 40%;}
+.gallery .pg-4{left: 60%;}
+.gallery .pg-5{left: 80%;}
+                            
+.gallery img{
+    width: 100%;
+}
+.pg-1 .gdiv , .pg-2 .gdiv , .pg-3 .gdiv , .pg-4 .gdiv , .pg-5 .gdiv{
+    position: absolute;top: 0;left: 0px;width: 100%;
+    height: 104%;
+    z-index: 90;
+    text-align: center;
+    visibility: hidden;
+    background: white; 
+    opacity: 0.8;  
+}
+.gallery .pg-1:hover .gdiv , .gallery .pg-2:hover .gdiv , .gallery .pg-3:hover .gdiv , .gallery .pg-4:hover .gdiv, .gallery .pg-5:hover .gdiv{
+    visibility: visible;
+
+
+}
+
+
+.gdiv i{
+    padding-top: 8px;
+    opacity: 1;
+    width: 35px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    z-index: 1024;
+    font-weight: bold;
+    background-color: royalblue;
+    position: relative;
+    top: 42%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+/* Bottom */
+.row-9{
+    background-color: rgb(37, 39, 46);
+}
+.bottom{
+    display: flex;
+    padding: 70px 15px 40px 15px;
+    height: 100%;
+}
+.bottom div{
+    margin-bottom: 30px; 
+    width: 100%;
+}
+.bottom a{  
+    color: white;
+}  
+.first i{
+    color:green
+}
+.ul{margin-left: 15px;margin-right: 15px;}
+.th{ margin-left: 15px;padding-left: 3px;}
+.first{
+    word-spacing: 1px;
+    font-family: Merriweather;
+    font-size: 80%;
+    font-weight: normal;
+    color: white;
+    line-height: 1.7;
+    margin-right: 15px;
+}
+.first li{
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+.first p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.th li{
+    display: inline-block;
+    padding: 0px 10px;
+    margin-right: 7px;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+     color: white;
+      background-color: royalblue;
+}
+.th i{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 5px;
+}
+
+
+
+/* Footer */
+.row-10{
+    background-color: rgb(49, 109, 217);
+}
+.footer{
+    padding: 0px 15px;
+}
+footer{
+font-family: Arial, Helvetica, sans-serif;
+text-transform: capitalize;
+font-weight: bold;
+    padding:15px 0px 15px 0px; 
+    color: white; 
+}
+
+/* Top Arrow */
+#top{
+    z-index: 1050;
+    width: 40px;
+    height: 35px;
+    position: fixed;
+    bottom: 10px;
+    background-color: blanchedalmond;
+    right: 10px;
+}
+#top img{
+    width: 100%;
+}
+
+/* Headings */
+.data h2{
+    font-weight: 500;
+    font-size: 3rem;}
+  
+.introduction h2 , .links h2 ,.gh h2{
+    padding: 0px;
+    font-family: Merriweather;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;}
+.mission-projects h3{
+    font-family: Merriweather-bold;
+    color: #316DC3;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;}
+.r1 h4,.r2 h4 {
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-family: Merriweather-bold;
+    color: #316DC3;
+    line-height: 1;}
+#links-h4{
+        font-size: 19px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        margin: 10px 0px;
+        font-family: Merriweather-bold;
+        color: #316DC3;
+        line-height: 1;
+}
+
+.ul h5,.th h5 , .data h5{
+    color: white;
+    font-family: Merriweather;
+    font-weight: 600;
+    font-size: 14px;}
+.monthly{
+        color: rgb(0, 255, 0);
+         font-size: 18px;
+    }
+    
